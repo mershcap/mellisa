@@ -17,16 +17,16 @@ def index():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	gk1=float(request.form.get("gk_diving",""))
-	gk2=float(request.form.get("gk_reflexes",""))
-	gk3=float(request.form.get("gk_positioning",""))
-	gk4=float(request.form.get("gk_handling",""))
-	gk5=float(request.form.get("movement_reactions",""))
-	gk6=float(request.form.get("gk_kicking",""))
-	gk7=float(request.form.get("mentality_composure",""))
-	gk8=float(request.form.get("passing",""))
-	gk9=float(request.form.get("potential",""))
-	gk10=float(request.form.get("value_eur",""))
+	gk1=float(request.form.get("gk1",""))
+	gk2=float(request.form.get("gk2",""))
+	gk3=float(request.form.get("gk3",""))
+	gk4=float(request.form.get("gk4",""))
+	gk5=float(request.form.get("gk5",""))
+	gk6=float(request.form.get("gk6",""))
+	gk7=float(request.form.get("gk7",""))
+	gk8=float(request.form.get("gk8",""))
+	gk9=float(request.form.get("gk9",""))
+	gk10=float(request.form.get("gk10",""))
 	features=[gk1,gk2,gk3,gk4,gk5,gk6,gk7,gk8,gk9,gk10]
 	values=[np.array(features)]
 	print(values)
