@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Munyaradzi Togarepi Players AI App</title>
+	</head>
+	<body>
+
+		<h1>Player overall score prediction web app by R195907K</h1>
+		<p>Please input the following scores for the player. NB: if player is not goalkeeper, goalkeeping scores must be zero and vice vesa.</p>
+		<form action="/predict" method="POST">
+			<input type="text" name="gk1" placeholder="Goalkeeper diving" required="required" /> 
+			<br>
+			<br>
+			<input type="text" name="gk2" placeholder="Goalkeeper reflexes" required="required" />
+			<br>
+			<br> 
+			<input type="text" name="gk3" placeholder="Goalkeeper positioning" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk4" placeholder="Goalkeeper handling" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk5" placeholder="Movement reactions" required="required" /> 
+			<br>
+			<br>
+			<input type="text" name="gk6" placeholder="Goalkeeper kicking" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk7" placeholder="Mentality composure" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk8" placeholder="Passing" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk9" placeholder="Potential" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk10" placeholder="Value in Euros" required="required" />
+			<br>
+			<br> 
+			{{ output }} 
+			<br>
+			<br>
+			<br>
+			<button type="submit" class="btn btn-primary btn-block btn-large">Submit Data and predict</button>
+		</form>
+ 		<br> 
+		<br>
+
+	</body>
+</html>
